@@ -23,11 +23,7 @@
         line-height: 1.6;
         margin: 0;
         padding: 0;
-    }
-    
-    .caption {
-        margin-right: 20px;
-        /* Adjust the spacing between image and caption */
+        background: antiquewhite;
     }
     
     .image-caption-container {
@@ -72,22 +68,28 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">NICS</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog-preview.html">Blogs</a>
-                    </li>
-                    <!-- Add more navigation links here -->
-                </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NICS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog-preview.html">Blogs</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </nav>
@@ -95,33 +97,48 @@
     <!-- Blog Content -->
     <section class="section">
         <div class="container">
-            <div class="blog-post">
-                <h2>Water Supply</h2>
-                <div class="image-caption-container">
-                    <img src="/assets/water.jpg" alt="Blog Image" class="img-fluid img-small" style="max-width: 300px; margin-right: 200px;">
-                    <div class="caption">
-                        <p>This is a caption or poster about the blog post.</p>
-                    </div>
+            <div class="blog-post ">
+
+                <div class="image-caption-container ">
+                    <img src="/assets/supply.jpg " alt="Blog Image " class="img-fluid img-small pb-2 " style="max-width: 300px; margin-right: 200px; ">
+
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut semper metus. Sed bibendum lorem a ante malesuada, nec pellentesque dui efficitur.</p>
-                <!-- Add more content here -->
+                <h2>Water Supply</h2>
+                <p class="fw-bold "> The Essential Role of Borehole Drilling in Sustainable Water Supply In today's rapidly changing world</p>
+                <p> Securing a reliable and sustainable water supply has become more crucial than ever. With growing populations and increasing demands, traditional water sources often fall short in meeting our needs. This is where borehole drilling emerges
+                    as a game-changer, offering a viable solution to ensure consistent access to clean and fresh water. <br>Understanding the Borehole Advantage Borehole drilling involves the process of creating deep wells into the earth's subsurface
+                    to tap into underground water reservoirs. These reservoirs, also known as aquifers, hold vast amounts of water that can be harnessed for various purposes. Boreholes provide several advantages: <br><b>1. Reliable Water Source:</b> Boreholes
+                    offer a dependable and sustainable water supply, especially in regions prone to water scarcity or unreliable surface water sources.
+                    <p><b>2. Water Quality:</b> The water sourced from boreholes is often naturally filtered through layers of rock and soil, resulting in improved water quality with fewer contaminants.<br> <b>3. Flexibility:</b> Boreholes can be tailored
+                        to meet specific water demands, whether for residential, agricultural, or industrial use.The Borehole Drilling Process Borehole drilling is a meticulous process that involves careful planning, site selection, and advanced drilling
+                        equipment.
+                    </p>
+                    The steps include: <br><b>1. Site Assessment:</b> Experts conduct geological and hydrogeological studies to identify suitable drilling locations with optimal water yield potential.<br> <b>2. Drilling:</b> Specialized drilling equipment
+                    is used to bore into the ground, creating a well that reaches the aquifer.<br> <b>3. Installation:</b> A casing is inserted into the borehole to prevent collapse and contamination. Screens may also be added to allow water to flow while
+                    keeping sediment out.
+                    <p><b>4. Development:</b> The borehole is developed by pumping out debris and sediment to enhance water flow.<br><b> 5. Pumping and Treatment:</b> A pump is installed to extract water, which may undergo treatment to meet quality standards
+                        before distribution. Advancing Water Sustainability Borehole drilling contributes significantly to water sustainability and resource management. It reduces pressure on surface water sources, minimizes the risk of waterborne diseases,
+                        and supports agriculture, irrigation, and industrial processes.</p>
+                    <p> <b>Nics Water Boreholes Drilling</b>: Your Partner in Water Security At Nics Water Boreholes Drilling, we specialize in professional borehole drilling services aimed at ensuring a consistent and clean water supply. Our experienced
+                        team employs cutting-edge technology and industry best practices to deliver efficient and sustainable water solutions. Whether you're a homeowner, farmer, or business owner, our commitment to excellence and customer satisfaction
+                        sets us apart as a leader in the borehole drilling industry. Contact us today to explore how borehole drilling can revolutionize your water supply and contribute to a more sustainable future. </p>
             </div>
         </div>
     </section>
     <!-- Social Media Sharing Icons -->
-    <div class="share-section">
+    <div class="share-section ">
         <p>Share this post:</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=full-blog-water.html&quote=Water_Supply" class="social-icon">
-                <i class="fab fa-facebook"></i>
+        <div class="social-icons ">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=full-blog-water.html&quote=Water_Supply " class="social-icon ">
+                <i class="fab fa-facebook "></i>
             </a>
 
-            <a href="https://twitter.com/intent/tweet?url=full-blog-water.html&text=Water_Supply" class="social-icon">
-                <i class="fab fa-twitter"></i>
+            <a href="https://twitter.com/intent/tweet?url=full-blog-water.html&text=Water_Supply " class="social-icon ">
+                <i class="fab fa-twitter "></i>
             </a>
 
-            <a href="https://www.linkedin.com/shareArticle?url=full-blog-water.html&title=Water_Supply" class="social-icon">
-                <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/shareArticle?url=full-blog-water.html&title=Water_Supply " class="social-icon ">
+                <i class="fab fa-linkedin "></i>
             </a>
 
         </div>
@@ -129,16 +146,14 @@
 
 
     <!-- Footer -->
-    <footer class="footer sticky-bottom">
-        <div class="row mt-3">
-            <div class="col-md-12 text-center">
+    <footer class="footer bottom ">
+        <div class="row mt-3 ">
+            <div class="col-md-12 text-center ">
                 <!-- Copyright or additional footer text -->
                 <p>&copy; 2023 Your Company. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script src="script.js "></script>
 </body>
 
 </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Previews</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<style>
+    /* Add background image to the hero section */
+    
+    body {
+        font-family: monospace;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #hero {
+        background-image: url('/assets/water.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        /* Adjust the height as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        font-family: monospace;
+    }
+    
+    .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero .cta-btn {
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+    
+    .hero .cta-btn:hover {
+        background-color: #555;
+    }
+</style>
+
+<body>
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="parallax">
+            <div class="container text-center">
+                <h1>Welcome to Our Blog</h1>
+                <p>Discover our latest blog posts.</p>
+                <a href="/index.html" class="btn btn-primary cta-btn">Go Back</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog-preview" class="section py-3">
+        <div class="container">
+            <h2 class="text-center">Blog Previews</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="blog-preview-item p-4">
+                        <img src="/assets/water.jpg" alt="Blog Image" class="img-fluid mb-3">
+                        <h3>Water Supply</h3>
+                        <p>Role of Borehole Drilling in Sustainable Water Supply.</p>
+                        <a href="/full-blog-water.html" class="btn btn-primary">Read Full Blog</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-preview-item p-4">
+                        <img src="/assets/water.jpg" alt="Blog Image" class="img-fluid mb-3">
+                        <h3>Borehole Drilling</h3>
+                        <p>Borehole Drilling: A Comprehensive Guide.</p>
+                        <a href="/full-blog-drilling.html" class="btn btn-primary">Read Full Blog</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-preview-item p-4">
+                        <img src="/assets/water.jpg" alt="Blog Image" class="img-fluid mb-3">
+                        <h3>Going Green Campaign</h3>
+                        <p>As the world unites in the pursuit of sustainable living... </p>
+                        <a href="/full-blog-solar.html" class="btn btn-primary">Read Full Blog</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-preview-item p-4">
+                        <img src="/assets/water.jpg" alt="Blog Image" class="img-fluid mb-3">
+                        <h3>Borehole Camera Inspection</h3>
+                        <p> the utilization of borehole camera inspection has emerged as a pivotal technique.</p>
+                        <a href="/full-blog-camera.html" class="btn btn-primary">Read Full Blog</a>
+                    </div>
+                </div>
+                <!-- Add more blog preview items here -->
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
