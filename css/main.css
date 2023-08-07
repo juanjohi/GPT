@@ -1,0 +1,181 @@
+    /* styles.css */
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: monospace;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0.3rem;
+    }
+    
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .section-divider {
+        border-bottom: 2px solid #ddd;
+        margin: 0 auto;
+        width: 80%;
+        /* Adjust the width as needed */
+    }
+    
+    .section {
+        transition: background-color 0.5s;
+    }
+    
+    .hero {
+        background-image: url('/assets/water.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        /* Adjust the height as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        font-family: monospace;
+    }
+    
+    .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero .cta-btn {
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+    
+    .hero .cta-btn:hover {
+        background-color: #555;
+    }
+    
+    section {
+        margin-bottom: 2rem;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+    }
+    /* Additional styling for the blog posts */
+    
+    .blog-post {
+        border: 1px solid #ccc;
+        padding: 1.5rem;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    .blog-post h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .blog-post p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        flex: 1;
+    }
+    
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* Custom CSS for gallery images */
+    
+    .team .row {
+        margin-top: 2rem;
+    }
+    
+    .team-item {
+        margin: 2rem 0;
+    }
+    
+    .team-img {
+        position: relative;
+    }
+    
+    .team-icons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        background: var(--white-smoke);
+        opacity: 0;
+        transition: var(--transition);
+    }
+    
+    .team-icons a {
+        color: var(--night-rider);
+        width: 50px;
+        height: 50px;
+        transition: var(--transition);
+    }
+    
+    .team-icons a:hover {
+        background: var(--mount-meadow);
+        color: #fff;
+    }
+    
+    .team-img:hover .team-icons {
+        opacity: 1;
+    }
+    
+    .team-info {
+        text-align: center;
+        padding: 1.5rem;
+        line-height: 1;
+    }
+    
+    .team-info h3 {
+        font-size: 1.4rem;
+        color: var(--night-rider);
+    }
+    
+    .team-info span {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+        opacity: 0.7;
+    }
