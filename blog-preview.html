@@ -21,7 +21,7 @@
     }
     
     #hero {
-        background-image: url('assets/water.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('assets/solar.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -48,8 +48,8 @@
     }
     
     .hero .cta-btn {
-        background-color: #333;
-        color: #fff;
+        background-color: #39a5a0;
+        color: #000000;
         text-decoration: none;
         padding: 1rem 2rem;
         border: none;
@@ -64,10 +64,35 @@
 </style>
 
 <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NICS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NICS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog-preview.html">Blogs</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
     <section id="hero" class="hero d-flex align-items-center">
         <div class="parallax">
             <div class="container text-center">
-                <h1>Welcome to Our Blog</h1>
+                <h1 class="text-bg-light fw-bold">Welcome to Our Blog</h1>
                 <p>Discover our latest blog posts.</p>
                 <a href="index.html" class="btn btn-primary cta-btn">Go Back</a>
             </div>
