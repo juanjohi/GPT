@@ -17,6 +17,33 @@
 
 </head>
 
+<style>
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+    
+    .whatsapp-icon a img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .whatsapp-icon a img:hover {
+        transform: scale(1.1);
+    }
+    
+    .fixed-height-img {
+        height: 250px;
+        /* Adjust the height as needed */
+        object-fit: cover;
+    }
+</style>
+
 <body>
     <div class="top">
         <p class="text-center" style="color: rgb(245, 243, 234); background-color: darkcyan;">To Reach us Call us on:0722489387, 072281052 or Email us at: Nicswaterboreholesdrilling@gmail.com</p>
@@ -281,7 +308,7 @@
 
     <div class="section-divider "></div>
 
-    <section id="team " class="py-5 bg-dark-subtle section ">
+    <section id="team " class="py-3 bg-dark-subtle section ">
         <div class="container ">
             <h2 class="text-center ">Our Team</h2>
 
@@ -291,7 +318,7 @@
                     <!-- Team member 1 -->
                     <div class="col-md-4 ">
                         <div class="card mb-3 text-center ">
-                            <img src="assets/k.jpg " alt="Team Member 1 " class="card-img-top ">
+                            <img src="assets/kj.jpg" class="card-img-top fixed-height-img" alt="Team Member 1">
                             <div class="card-body ">
                                 <h4 class="card-title ">CEO/OWNER</h4>
                                 <p class="card-text ">Julius Kamau</p>
@@ -303,22 +330,11 @@
                     <!-- Team member 2 -->
                     <div class="col-md-4 ">
                         <div class="card mb-3 text-center ">
-                            <img src="assets/g.jpg " alt="Team Member 2 " class="card-img-top ">
+                            <img src="assets/gm.jpg" class="card-img-top fixed-height-img" alt="Team Member 2">
                             <div class="card-body ">
                                 <h4 class="card-title ">Geologist</h4>
                                 <p class="card-text ">Githae mbugua</p>
                                 <!-- Additional information about the Surveyor -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Team member 3 -->
-                    <div class="col-md-4 ">
-                        <div class="card mb-3 text-center ">
-                            <img src="assets/water.jpg " alt="Team Member 3 " class="card-img-top ">
-                            <div class="card-body ">
-                                <h4 class="card-title ">Social Media Manager</h4>
-                                <p class="card-text ">Name of Social Media Manager</p>
-                                <!-- Additional information about the Social Media Manager -->
                             </div>
                         </div>
                     </div>
@@ -377,31 +393,38 @@
     </div>
     </section>
 
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/722489387" target="_blank">
+            <img src="assets/whatsapp.png" alt="WhatsApp Icon">
+        </a>
+    </div>
+
+
     <footer class="py-4 bg-dark text-white ">
         <div class="container ">
             <div class="row ">
                 <div class="col-md-4 ">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item ">
-                            <a class="nav-link " href="#home ">Home</a>
+                            <a class="nav-link " href="#home">Home</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#about ">About</a>
+                            <a class="nav-link " href="#about">About</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#blog ">Blog</a>
+                            <a class="nav-link " href="#blog">Blog</a>
                         </li>
                 </div>
                 <div class="col-md-4 ">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item ">
-                            <a class="nav-link " href="#brands ">Brands</a>
+                            <a class="nav-link " href="#brands">Brands</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#team ">Team</a>
+                            <a class="nav-link " href="#team">Team</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#contact ">Contact</a>
+                            <a class="nav-link " href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -431,6 +454,18 @@
     <script src="resources/OwlCarousel2-2.3.4/dist/owl.carousel.js "></script>
     <script src="js/main.js "></script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const whatsappLink = document.querySelector(".whatsapp-icon a");
+            whatsappLink.addEventListener("click", function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
