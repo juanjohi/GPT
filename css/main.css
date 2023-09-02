@@ -180,3 +180,14 @@
         font-weight: 500;
         opacity: 0.7;
     }
+    
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 50px;
+        text-decoration: none;
+        z-index: 9999;
+    }
